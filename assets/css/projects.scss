@@ -219,6 +219,7 @@ main {
         img {
           height: 100px;
           object-fit: cover;
+          cursor: pointer;
         }
       }
     }
@@ -256,5 +257,24 @@ main {
       height: 30px;
       left: calc(50vw - 45px);
     }
+  }
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+
+  img {
+    height: 70vh;
+    width: auto;
+    cursor: default;
   }
 }
